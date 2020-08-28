@@ -12,8 +12,8 @@ RUN rm -rf /var/www/html
 
 RUN ln -s public html
 
-RUN usermod -u 1000 www-data
-USER www-data
+#RUN usermod -u 1000 www-data
+#USER www-data
 
 EXPOSE 9000
 
