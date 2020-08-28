@@ -10,7 +10,7 @@ steps:
 
 - id: "Alterando permissões"
   name: 'gcr.io/cloud-builders/docker'
-  args: ['exec', '-t', 'app-laravel', 'chmod', '-R', '777']
+  args: ['exec', '-t', 'app-laravel', 'chmod', '-Rcvf', '777']
 
 - id: "Instalando as dependências com o composer"
   name: 'gcr.io/cloud-builders/docker'
